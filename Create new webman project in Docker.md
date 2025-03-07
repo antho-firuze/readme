@@ -26,7 +26,7 @@
 6. **Install default plugins** :
 
    ```bash
-   docker exec [container_id/name] composer require webman/database workerman/crontab firuze/jwt vlucas/phpdotenv phpmailer/phpmailer webman/push aws/aws-sdk-php polarising/bcrypt
+   docker exec [container_id/name] composer require webman/database workerman/crontab firuze/jwt vlucas/phpdotenv phpmailer/phpmailer webman/push aws/aws-sdk-php polarising/bcrypt webman/redis illuminate/events
    ```
 
 7. On file **docker-compose.yml** :
