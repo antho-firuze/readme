@@ -23,10 +23,22 @@
    docker exec [container_id/name] composer create-project workerman/webman .
    ```
 
-6. **Install default plugins** :
+6. **Install plugins** :
 
    ```bash
-   docker exec [container_id/name] composer require webman/database workerman/crontab firuze/jwt vlucas/phpdotenv phpmailer/phpmailer webman/push aws/aws-sdk-php polarising/bcrypt webman/redis illuminate/events
+   docker exec [container_id/name] composer require \
+   workerman/crontab \
+   workerman/validation \
+   webman/database \
+   webman/push \
+   webman/redis \
+   webman/redis-queue \
+   vlucas/phpdotenv \
+   firuze/jwt \
+   phpmailer/phpmailer \
+   aws/aws-sdk-php \
+   polarising/bcrypt \
+   illuminate/events 
    ```
 
 7. On file **docker-compose.yml** :
